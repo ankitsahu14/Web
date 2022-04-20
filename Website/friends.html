@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Friends</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrrapperr">
+			
+			<div class="row">
+                <div class="column">
+                  <img src="Devanshi.jpg" alt="Snow" width=250px height=250px >
+                  <figcaption>Devanshi</figcaption>
+                </div>
+                <div class="column">
+                  <img src="Aditi.jpg" alt="Forest" width=250px height=250px>
+                  <figcaption>Aditi</figcaption>
+                </div>
+                <div class="column">
+                  <img src="Ashu.jpg" alt="Mountains" width=250px height=250px>
+                  <figcaption>Ayush</figcaption>
+                </div>
+                
+              </div>
+            
+         
+		
+        <div class = "row">
+            <div class = "column">
+                <p id = "GFG_UP" style =
+        "font-size: 16px; font-weight: bold;">     
+    </p>
+      
+    <button onclick = "gfg_Run()"> 
+        Click here
+    </button>
+      
+    <p id = "GFG_DOWN" style =
+        "color:pink; font-size: 20px; font-weight: bold;">
+    </p>
+            </div>
+        </div>
+    </div>
+      
+    <script>
+        var el_up = document.getElementById("GFG_UP");
+        var el_down = document.getElementById("GFG_DOWN");
+        var str = "Click on button to Add as Friend";
+      
+        el_up.innerHTML = str;
+      
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+            
+           
+        }
+          
+        function gfg_Run() {
+            changeColor('pink');
+            el_down.innerHTML = "Welcome";
+        }         
+    </script>
+           </body>
+</html>
